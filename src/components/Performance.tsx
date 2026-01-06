@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Performance() {
+  const { t } = useTranslation();
+
   const stats = [
     { number: "320mg", label: "Premium Caffeine" },
     { number: "500ml", label: "Optimal Volume" },
@@ -57,8 +60,12 @@ export function Performance() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-black italic mb-2">SPEED</h3>
-                <p className="text-sm text-zinc-400">Rapid energy activation</p>
+                <h3 className="text-2xl font-black italic mb-2">
+                  {t("performance.speed.title")}
+                </h3>
+                <p className="text-sm text-zinc-400">
+                  {t("performance.speed.description")}
+                </p>
               </div>
               {/* Red accent line */}
               <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-red-500 via-purple-500 to-red-500"></div>
@@ -80,8 +87,12 @@ export function Performance() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-black italic mb-2">STRENGTH</h3>
-                <p className="text-sm text-zinc-400">Enhanced performance</p>
+                <h3 className="text-2xl font-black italic mb-2">
+                  {t("performance.strength.title")}
+                </h3>
+                <p className="text-sm text-zinc-400">
+                  {t("performance.strength.description")}
+                </p>
               </div>
               <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-purple-500 via-red-500 to-purple-500"></div>
             </div>
@@ -102,8 +113,12 @@ export function Performance() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-2xl font-black italic mb-2">ENDURANCE</h3>
-                <p className="text-sm text-zinc-400">Sustained energy flow</p>
+                <h3 className="text-2xl font-black italic mb-2">
+                  {t("performance.endurance.title")}
+                </h3>
+                <p className="text-sm text-zinc-400">
+                  {t("performance.endurance.description")}
+                </p>
               </div>
               <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-red-500 via-purple-500 to-red-500"></div>
             </div>
@@ -119,15 +134,14 @@ export function Performance() {
         >
           <div className="text-red-500 text-6xl mb-6">"</div>
           <blockquote className="text-3xl md:text-4xl font-black italic mb-8">
-            DESIGNED FOR THOSE WHO
+            {t("performance.quote.designedFor")}
             <br />
             <span className="bg-gradient-to-r from-red-500 via-purple-500 to-red-500 bg-clip-text text-transparent">
-              REFUSE TO SETTLE
+              {t("performance.quote.refuseToSettle")}
             </span>
           </blockquote>
           <p className="text-zinc-400 text-lg">
-            Pegasus Energy is more than just a drink—it's a statement. Built for
-            athletes who demand excellence in every aspect of their performance.
+            {t("performance.quoteDescription")}
           </p>
         </motion.div>
       </div>

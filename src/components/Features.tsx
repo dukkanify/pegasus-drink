@@ -1,32 +1,34 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { Zap, Target, Trophy, Flame } from "lucide-react";
 
-const features = [
-  {
-    icon: Zap,
-    title: "INSTANT ENERGY",
-    description: "Rapid caffeine absorption for immediate performance boost",
-  },
-  {
-    icon: Target,
-    title: "LASER FOCUS",
-    description:
-      "Enhanced mental clarity and concentration for peak performance",
-  },
-  {
-    icon: Trophy,
-    title: "ENDURANCE",
-    description: "Extended energy release for sustained athletic output",
-  },
-  {
-    icon: Flame,
-    title: "ZERO CRASH",
-    description: "Smooth energy curve without the typical energy drink crash",
-  },
-];
-
 export function Features() {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      icon: Zap,
+      title: t("features.instantEnergy.title"),
+      description: t("features.instantEnergy.description"),
+    },
+    {
+      icon: Target,
+      title: t("features.laserFocus.title"),
+      description: t("features.laserFocus.description"),
+    },
+    {
+      icon: Trophy,
+      title: t("features.endurance.title"),
+      description: t("features.endurance.description"),
+    },
+    {
+      icon: Flame,
+      title: t("features.zeroCrash.title"),
+      description: t("features.zeroCrash.description"),
+    },
+  ];
+
   return (
     <section className="py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-900 to-black"></div>
@@ -40,14 +42,12 @@ export function Features() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-black italic mb-4">
-            BUILT FOR{" "}
+            {t("features.title").split(" ")[0]}{" "}
             <span className="bg-gradient-to-r from-red-500 via-purple-500 to-red-500 bg-clip-text text-transparent">
-              ATHLETES
+              {t("features.title").split(" ")[1]}
             </span>
           </h2>
-          <p className="text-xl text-zinc-400">
-            Engineered for maximum performance
-          </p>
+          <p className="text-xl text-zinc-400">{t("features.subtitle")}</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

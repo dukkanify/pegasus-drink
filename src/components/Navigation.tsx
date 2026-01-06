@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import logo from "../assets/pegasus_logo_transparent.png";
-import { User } from "lucide-react";
+import { LanguageToggle } from "./LanguageToggle";
 
 export function Navigation() {
+  const { t } = useTranslation();
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-zinc-800">
       <div className="container mx-auto px-6 py-4">
@@ -27,31 +30,28 @@ export function Navigation() {
               href="#home"
               className="text-white hover:text-purple-400 transition-colors"
             >
-              Home
+              {t("nav.home")}
             </a>
             <a
               href="#products"
               className="text-white hover:text-purple-400 transition-colors"
             >
-              Products
+              {t("nav.products")}
             </a>
             <a
               href="#about"
               className="text-white hover:text-purple-400 transition-colors"
             >
-              About
+              {t("nav.about")}
             </a>
             <a
               href="#contact"
               className="text-white hover:text-purple-400 transition-colors"
             >
-              Contact
+              {t("nav.contact")}
             </a>
+            <LanguageToggle />
           </div>
-
-          <button className="p-2 hover:bg-zinc-800 rounded-full transition-colors group">
-            <User className="w-5 h-5 group-hover:text-purple-400 transition-colors" />
-          </button>
         </div>
       </div>
     </nav>

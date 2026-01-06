@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": {
+      "cant": "CAN'T",
+      "ignore": "IGNORE",
+      "it": "IT"
+    },
+    "description": "Pegasus Energy bursts onto the scene with a street-inspired attitude and sleek design. Captures the essence of underground energy—minimal, powerful, and made to stand out.",
+    "fuelUp": "FUEL UP",
+    "caffeine": "Caffeine",
+    "volume": "Volume"
+  },
+  "features": {
+    "title": "BUILT FOR ATHLETES",
+    "subtitle": "Engineered for maximum performance",
+    "instantEnergy": {
+      "title": "INSTANT ENERGY",
+      "description": "Rapid caffeine absorption for immediate performance boost"
+    },
+    "laserFocus": {
+      "title": "LASER FOCUS",
+      "description": "Enhanced mental clarity and concentration for peak performance"
+    },
+    "endurance": {
+      "title": "ENDURANCE",
+      "description": "Extended energy release for sustained athletic output"
+    },
+    "zeroCrash": {
+      "title": "ZERO CRASH",
+      "description": "Smooth energy curve without the typical energy drink crash"
+    }
+  },
+  "product": {
+    "premiumFormula": "Premium Formula",
+    "powerInEverySip": {
+      "powerIn": "POWER IN",
+      "every": "EVERY",
+      "sip": "SIP"
+    },
+    "description": "Our scientifically formulated blend delivers sustained energy without compromise. Each ingredient is carefully selected to maximize athletic performance and mental clarity.",
+    "ingredients": {
+      "caffeine": {
+        "name": "Caffeine",
+        "benefit": "Energy & Alertness"
+      },
+      "taurine": {
+        "name": "Taurine",
+        "benefit": "Muscle Function"
+      },
+      "bVitamins": {
+        "name": "B-Vitamins",
+        "amount": "Complete",
+        "benefit": "Metabolism Support"
+      },
+      "lCarnitine": {
+        "name": "L-Carnitine",
+        "benefit": "Fat Metabolism"
+      }
+    },
+    "labTested": "Lab Tested",
+    "zeroFat": "0 Fat",
+    "decorative": {
+      "energy": "Energy",
+      "performance": "Performance",
+      "power": "Power",
+      "focus": "Focus"
+    }
+  },
+  "performance": {
+    "speed": {
+      "title": "SPEED",
+      "description": "Rapid energy activation"
+    },
+    "strength": {
+      "title": "STRENGTH",
+      "description": "Enhanced performance"
+    },
+    "endurance": {
+      "title": "ENDURANCE",
+      "description": "Sustained energy flow"
+    },
+    "quote": {
+      "designedFor": "DESIGNED FOR THOSE WHO",
+      "refuseToSettle": "REFUSE TO SETTLE"
+    },
+    "quoteDescription": "Pegasus Energy is more than just a drink—it's a statement. Built for athletes who demand excellence in every aspect of their performance."
+  },
+  "cta": {
+    "title": {
+      "readyTo": "READY TO",
+      "unleash": "UNLEASH",
+      "yourPower": "YOUR POWER?"
+    },
+    "description": "Join thousands of athletes who refuse to be average. Experience the Pegasus difference today.",
+    "orderNow": "ORDER NOW",
+    "findStores": "FIND STORES"
+  },
+  "language": {
+    "english": "English",
+    "arabic": "العربية"
+  }
+}

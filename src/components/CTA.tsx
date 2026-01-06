@@ -1,9 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import { CircularWaves } from "./WavyLines";
 
 export function CTA() {
+  const { t } = useTranslation();
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
       {/* Animated background */}
@@ -53,17 +55,16 @@ export function CTA() {
           </motion.div>
 
           <h2 className="text-5xl md:text-7xl font-black italic mb-8">
-            READY TO
+            {t("cta.title.readyTo")}
             <br />
             <span className="bg-gradient-to-r from-red-500 via-purple-500 to-red-500 bg-clip-text text-transparent">
-              UNLEASH
+              {t("cta.title.unleash")}
             </span>{" "}
-            YOUR POWER?
+            {t("cta.title.yourPower")}
           </h2>
 
           <p className="text-xl md:text-2xl text-zinc-400 mb-12 max-w-2xl mx-auto">
-            Join thousands of athletes who refuse to be average. Experience the
-            Pegasus difference today.
+            {t("cta.description")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -73,7 +74,7 @@ export function CTA() {
               className="bg-gradient-to-r from-red-600 via-purple-600 to-red-600 hover:from-red-700 hover:via-purple-700 hover:to-red-700 text-white px-12 py-5 text-xl font-black italic relative overflow-hidden group min-w-[250px]"
             >
               <span className="relative z-10 flex items-center justify-center gap-3">
-                ORDER NOW
+                {t("cta.orderNow")}
                 <ArrowRight className="w-6 h-6" />
               </span>
               <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></div>
@@ -84,7 +85,7 @@ export function CTA() {
               whileTap={{ scale: 0.95 }}
               className="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-12 py-5 text-xl font-black italic transition-colors min-w-[250px]"
             >
-              FIND STORES
+              {t("cta.findStores")}
             </motion.button>
           </div>
         </motion.div>

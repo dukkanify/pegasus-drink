@@ -1,14 +1,33 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
 import logo from "../assets/can.png";
 import { FlowingWaves } from "./WavyLines";
 
 export function ProductShowcase() {
+  const { t } = useTranslation();
+
   const ingredients = [
-    { name: "Caffeine", amount: "320mg", benefit: "Energy & Alertness" },
-    { name: "Taurine", amount: "1000mg", benefit: "Muscle Function" },
-    { name: "B-Vitamins", amount: "Complete", benefit: "Metabolism Support" },
-    { name: "L-Carnitine", amount: "500mg", benefit: "Fat Metabolism" },
+    {
+      name: t("product.ingredients.caffeine.name"),
+      amount: "320mg",
+      benefit: t("product.ingredients.caffeine.benefit"),
+    },
+    {
+      name: t("product.ingredients.taurine.name"),
+      amount: "1000mg",
+      benefit: t("product.ingredients.taurine.benefit"),
+    },
+    {
+      name: t("product.ingredients.bVitamins.name"),
+      amount: t("product.ingredients.bVitamins.amount"),
+      benefit: t("product.ingredients.bVitamins.benefit"),
+    },
+    {
+      name: t("product.ingredients.lCarnitine.name"),
+      amount: "500mg",
+      benefit: t("product.ingredients.lCarnitine.benefit"),
+    },
   ];
 
   return (
@@ -40,20 +59,18 @@ export function ProductShowcase() {
           >
             <div>
               <span className="text-purple-400 uppercase tracking-wider text-sm">
-                Premium Formula
+                {t("product.premiumFormula")}
               </span>
               <h2 className="text-5xl md:text-6xl font-black italic mt-4 mb-6">
-                POWER IN
+                {t("product.powerInEverySip.powerIn")}
                 <br />
-                EVERY{" "}
+                {t("product.powerInEverySip.every")}{" "}
                 <span className="bg-gradient-to-r from-red-500 to-purple-500 bg-clip-text text-transparent">
-                  SIP
+                  {t("product.powerInEverySip.sip")}
                 </span>
               </h2>
               <p className="text-xl text-zinc-400">
-                Our scientifically formulated blend delivers sustained energy
-                without compromise. Each ingredient is carefully selected to
-                maximize athletic performance and mental clarity.
+                {t("product.description")}
               </p>
             </div>
 
@@ -100,7 +117,9 @@ export function ProductShowcase() {
                     />
                   </svg>
                 </div>
-                <span className="text-sm uppercase">Lab Tested</span>
+                <span className="text-sm uppercase">
+                  {t("product.labTested")}
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full border-2 border-green-500 flex items-center justify-center">
@@ -118,7 +137,9 @@ export function ProductShowcase() {
                     />
                   </svg>
                 </div>
-                <span className="text-sm uppercase">0 Fat</span>
+                <span className="text-sm uppercase">
+                  {t("product.zeroFat")}
+                </span>
               </div>
             </div>
           </motion.div>
@@ -171,16 +192,16 @@ export function ProductShowcase() {
               >
                 <div className="w-[450px] h-[450px] relative">
                   <span className="absolute top-0 left-1/2 -translate-x-1/2 text-xs uppercase tracking-widest text-zinc-600">
-                    Energy
+                    {t("product.decorative.energy")}
                   </span>
                   <span className="absolute bottom-0 left-1/2 -translate-x-1/2 text-xs uppercase tracking-widest text-zinc-600">
-                    Performance
+                    {t("product.decorative.performance")}
                   </span>
                   <span className="absolute left-0 top-1/2 -translate-y-1/2 text-xs uppercase tracking-widest text-zinc-600">
-                    Power
+                    {t("product.decorative.power")}
                   </span>
                   <span className="absolute right-0 top-1/2 -translate-y-1/2 text-xs uppercase tracking-widest text-zinc-600">
-                    Focus
+                    {t("product.decorative.focus")}
                   </span>
                 </div>
               </motion.div>
