@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global custom properties and base styles */
+@import "./styles/global.css";
+
+/* App-specific styles */
+@import "./App.css";
